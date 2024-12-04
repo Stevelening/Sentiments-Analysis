@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    font-size: 14px;
+    padding: 5px 10px;
+    width: 300px;
+}
+
+.title {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    background-color: #24445c;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: white;   
+}
+
+button {
+    background-color: #007BFF;
+    color: white;             
+    border: none;             
+    padding: 5px 10px;       
+    font-size: 14px;
+    font-weight: 600;           
+    border-radius: 5px;        
+    cursor: pointer;           
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#logout-button {
+    background-color: #dc3545;
+    padding: 10px;
+}
+
+#logout-button:hover {
+    background-color: #c82333;
+}
+
+#chat-box {
+    height: 300px;
+    width: 500px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    border-radius: 5px; 
+}
+
+.message {
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.evaluated {
+    color: green;
+    font-weight: bold;
+}
+
+.not-evaluated {
+    color: red;
+    font-style: italic;
+}
+
+#recipient-input {
+    display: none;
+    width: 480px;
+    margin-bottom: 10px;
+}
+
+.sendMessage {
+    display: none;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #24445c;
+}
+
+.logout {
+    display: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.setUsername {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #24445c;
+    border-radius: 5px;
+}

@@ -17,7 +17,7 @@ Projet d'analyse de sentiments pour la détection de messages haineux dans une c
 
 ## I - Application web :
 1. Architecture du chat :
-- Frontend : html, css
+- Frontend : html, css et javascript
 - Backend : express
 - BD : SQLite3
 
