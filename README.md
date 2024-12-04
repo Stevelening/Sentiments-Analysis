@@ -1,15 +1,29 @@
 # Sentiments-Analysis
-Projet d'analyse de sentiments pour la détection de messages haineux dans une conversation
+Projet d'analyse de sentiments pour la détection de messages haineux dans une conversation.
+
+
+## Auteurs :
+- Lazzari Vinicius
+- Lening Steve
+- Masi Alessio
+- Theubo Ghislain
 
 
 ## Structure du repository :
-1. **Appli** contient l'essentiel de l'application web
+1. **Chat** contient l'essentiel de l'application web
 2. **Modele** contient le modele d'IA que nous utilisons
 3. **Rapports** contient tous les rapports aux formats word et pdf
 
+
 ## I - Application web :
-1. Comment lancer le frontend React :
-- Se deplacer dans Appli/chat
+1. Architecture du chat :
+- Frontend : html, css
+- Backend : express
+- BD : SQLite3
+
+2. Comment lancer l'application :
+- Se deplacer dans Chat en exécutant la commande `cd Chat`
 - Executer la commande `npm install` pour installer les dependances necessaires
-- Executer la commande `npm run dev` pour lancer le serveur
-- Se connecter sur le navigateur a l'adresse `http://localhost:5173/`
+- Executer la commande `node index.js` pour lancer le serveur express. Si tout ce passe bien, vous verez apparaître le message `Server running at http://localhost:3000` dans votre terminal.
+- Double cliquer le fichier `index.html` qui se trouve dans `./public/index.html`. La page index.html se lance dans le navigateur.
+- Vous pouvez maintenant utiliser le Chat.
