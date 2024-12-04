@@ -25,5 +25,5 @@ Projet d'analyse de sentiments pour la détection de messages haineux dans une c
 - Se deplacer dans Chat en exécutant la commande `cd Chat`
 - Executer la commande `npm install` pour installer les dependances necessaires
 - Executer la commande `node index.js` pour lancer le serveur express. Si tout ce passe bien, vous verez apparaître le message `Server running at http://localhost:3000` dans votre terminal.
-- Double cliquer le fichier `index.html` qui se trouve dans `./public/index.html`. La page index.html se lance dans le navigateur.
+- Dans le navigateur, aller à l´adresse `http://localhost:3000`.
 - Vous pouvez maintenant utiliser le Chat.
