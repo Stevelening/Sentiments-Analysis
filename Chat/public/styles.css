@@ -95,6 +95,21 @@ button:hover {
     margin-top: 20px;
 }
 
+.administration {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#administration{
+    background-color: #4CAF50;
+    padding: 7px 10px;
+}
+
+#administration:hover {
+    background-color: #45a049;
+}
+
 .setUsername {
     display: flex;
     justify-content: space-between;
@@ -102,4 +117,50 @@ button:hover {
     padding: 10px;
     background-color: #24445c;
     border-radius: 5px;
+}
+
+.inputContainer {
+    background-color: #24445c;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.inputSubContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.submitContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    color: white;
+}
+
+#submit {
+    padding: 7px 10px;
+    background-color: #4CAF50;
+}
+
+#submit:hover {
+    background-color: #45a049;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#logoutAdmin {
+    background-color: #dc3545;
+    padding: 10px;
+}
+
+#logoutAdmin:hover {
+    background-color: #c82333;
 }

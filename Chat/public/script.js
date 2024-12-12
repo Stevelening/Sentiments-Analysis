@@ -6,6 +6,7 @@ function loadDOM() {
     const sendButton = document.getElementById("send-button");
     const chatBox = document.getElementById("chat-box");
     const logoutButton = document.getElementById("logout-button");
+    const adminBututon = document.getElementById("administration");
 
     let username = getCookie("username"); // Try to get the username from the cookie
     let ws;
@@ -112,6 +113,16 @@ function loadDOM() {
 
     // Handle logout
     logoutButton.onclick = logout;
+
+    // Handle administration
+    adminBututon.onclick = () => {
+        if(localStorage.getItem("adminUser")){
+            window.location.href="admin.html";
+        }
+        else{
+            window.location.href="login.html";
+        }
+    };
 
     // Fetch all messages for the logged-in user
     async function fetchMessages() {
