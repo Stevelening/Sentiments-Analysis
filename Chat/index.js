@@ -1,6 +1,7 @@
 const express = require("express");
 const { WebSocketServer } = require("ws");
 const sqlite3 = require("sqlite3").verbose();
+const admin = require("./config")
 
 // Initialize Express app and SQLite database
 const app = express();
@@ -46,17 +47,17 @@ app.get("/messages/:username", (req, res) => {
 });
 
 app.get("/messages", (req, res) => {
-    db.all(
-      "SELECT * FROM messages WHERE evaluated = FALSE ORDER BY timestamp ASC",
-      (err, rows) => {
-        if (err) {
-          res.status(500).json({ error: "Failed to fetch messages" });
-          return;
-        }
-        res.json(rows);
+  db.all(
+    "SELECT * FROM messages WHERE evaluated = FALSE ORDER BY timestamp ASC",
+    (err, rows) => {
+      if (err) {
+        res.status(500).json({ error: "Failed to fetch messages" });
+        return;
       }
-    );
-  });
+      res.json(rows);
+    }
+  );
+});
 
 // Endpoint to evaluate a message (add toxicity and mark as evaluated)
 app.post("/evaluate", (req, res) => {
@@ -72,6 +73,17 @@ app.post("/evaluate", (req, res) => {
       res.json({ success: true });
     }
   );
+});
+
+// Endpoint to verify if a user is an admin
+app.post("/admin", (req, res) => {
+  const { login, password } = req.body;
+  if (login === admin.login && password === admin.password) {
+    res.json({ success: true, message: "Credentials ok" });
+  }
+  else {
+    res.json({ success: false, message: "Wrong credentials" });
+  }
 });
 
 // Start the Express server

@@ -116,7 +116,7 @@ function loadDOM() {
 
     // Handle administration
     adminBututon.onclick = () => {
-        if(localStorage.getItem("adminUser")){
+        if(localStorage.getItem("adminUser") === "true"){
             window.location.href="admin.html";
         }
         else{
