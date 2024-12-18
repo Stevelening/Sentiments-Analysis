@@ -21,9 +21,15 @@ Projet d'analyse de sentiments pour la détection de messages haineux dans une c
 - Backend : express
 - BD : SQLite3
 
-2. Comment lancer l'application :
+2. Comment lancer l'application Chat :
 - Se deplacer dans Chat en exécutant la commande `cd Chat`
 - Executer la commande `npm install` pour installer les dependances necessaires
 - Executer la commande `node index.js` pour lancer le serveur express. Si tout ce passe bien, vous verez apparaître le message `Server running at http://localhost:3000` dans votre terminal.
 - Dans le navigateur, aller à l´adresse `http://localhost:3000`.
 - Vous pouvez maintenant utiliser le Chat.
+
+3. Lancer le serveur python qui permet de communiquer avec le modele :
+- Telecharger le dossier `harassment_model_save` [lien du dossier sur le cloud] et le mettre dans le dossier Modele.
+- Se deplacer dans Modele avec la commande `cd Modele` .
+- Installer les dependances `pip install -r requirements.txt` .
+- Lancer le serveur avec la commande `python3 server.py` .
