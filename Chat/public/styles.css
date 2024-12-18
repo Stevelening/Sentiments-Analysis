@@ -7,11 +7,11 @@ body {
 input {
     font-size: 14px;
     padding: 5px 10px;
-    width: 300px;
+    width: 600px;
 }
 
 .title {
-    width: 500px;
+    width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +52,7 @@ button:hover {
 
 #chat-box {
     height: 300px;
-    width: 500px;
+    width: 800px;
     border: 1px solid #ccc;
     overflow-y: scroll;
     border-radius: 5px; 
@@ -76,7 +76,7 @@ button:hover {
 
 #recipient-input {
     display: none;
-    width: 480px;
+    width: 780px;
     margin-bottom: 10px;
 }
 
