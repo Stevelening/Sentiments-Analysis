@@ -33,9 +33,12 @@ app.use(express.json()); // For parsing application/json
 // Endpoint to retrieve all messages for a specific user (sender or recipient)
 app.get("/messages/:username", (req, res) => {
   const { username } = req.params;
+
   db.all(
-    "SELECT * FROM messages WHERE recipient = ? ORDER BY timestamp ASC",
-    [username],
+    `SELECT * FROM messages 
+     WHERE sender = ? OR recipient = ? 
+     ORDER BY timestamp ASC`,
+    [username, username],
     (err, rows) => {
       if (err) {
         res.status(500).json({ error: "Failed to fetch messages" });

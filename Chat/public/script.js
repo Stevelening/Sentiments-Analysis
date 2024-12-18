@@ -41,12 +41,10 @@ function loadDOM() {
             ws.close();
         }
         username = null;
+
         document.getElementById("username-input-container").style.display = "flex";
-
         document.getElementById("recipient-input").style.display = "none";
-
         document.getElementById("message-input-container").style.display = "none";
-
         document.getElementById("logout-container").style.display = "none";
 
         chatBox.innerHTML = ''; // Clear chat on logout
@@ -61,11 +59,8 @@ function loadDOM() {
             ws.send(username);
 
             document.getElementById("username-input-container").style.display = "none";
-
             document.getElementById("recipient-input").style.display = "block";
-
             document.getElementById("message-input-container").style.display = "flex";
-
             document.getElementById("logout-container").style.display = "flex";
         };
 
@@ -138,10 +133,16 @@ function loadDOM() {
                 const messageElement = document.createElement("div");
                 messageElement.classList.add("message");
 
+                console.log(message)
+
                 if (message.evaluated) {
                     messageElement.innerHTML = `${message.sender}: ${message.message} <span class="evaluated">(Toxicity: ${message.toxicity})</span>`;
                 } else {
                     messageElement.innerHTML = `${message.sender}: ${message.message} <span class="not-evaluated">(Not Evaluated)</span>`;
+                }
+
+                if (message.sender == username) {
+                    messageElement.style.textAlign = "right";
                 }
 
                 chatBox.appendChild(messageElement);
