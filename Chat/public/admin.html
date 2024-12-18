@@ -12,8 +12,19 @@
     <div class="title">
       <h2>Welcome admin</h2>
     </div>
-    Tableau contenant les messages suspects
-
+    <div class="tableContainer">
+      <p>Liste des messages suspects</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Message</th>
+            <th>Harassment</th>
+          </tr>
+        </thead>
+        <tbody id="suspectMessages"></tbody>
+      </table>
+    </div>
     <div class="buttonContainer">
         <button id="retourAdmin">Retour</button>
         <button id="logoutAdmin">Logout</button>

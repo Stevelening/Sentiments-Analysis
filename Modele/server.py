@@ -13,7 +13,7 @@ from flask import Flask, request, jsonify
 # Initialisation de l'application Flask
 app = Flask(__name__)
 
-# Function to send requests to the Express server every 5 seconds
+# Function to send requests to the Express server every 1 second
 def send_to_express():
     url = "http://127.0.0.1:3000"  # Endpoint of the Express server
     while True:
@@ -41,8 +41,8 @@ def send_to_express():
         except Exception as e:
             print(f"Error while sending request to Express: {e}")
         finally:
-            # Wait 5 seconds before the next request
-            time.sleep(5)
+            # Wait 1 second before the next request
+            time.sleep(1)
 
 # Route /evaluate pour evaluer le message
 @app.route('/evaluate', methods=['POST'])

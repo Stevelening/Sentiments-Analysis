@@ -49,9 +49,24 @@ app.get("/messages/:username", (req, res) => {
   );
 });
 
+// Enpoint to get unevaluated messages
 app.get("/messages", (req, res) => {
   db.all(
     "SELECT * FROM messages WHERE evaluated = FALSE ORDER BY timestamp ASC",
+    (err, rows) => {
+      if (err) {
+        res.status(500).json({ error: "Failed to fetch messages" });
+        return;
+      }
+      res.json(rows);
+    }
+  );
+});
+
+// Enpoint to get evaluated messages
+app.get("/evaluated-messages", (req, res) => {
+  db.all(
+    "SELECT * FROM messages WHERE evaluated = TRUE ORDER BY timestamp ASC",
     (err, rows) => {
       if (err) {
         res.status(500).json({ error: "Failed to fetch messages" });

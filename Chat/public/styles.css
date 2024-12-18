@@ -168,3 +168,46 @@ label {
 #logoutAdmin:hover {
     background-color: #c82333;
 }
+
+/* Style pour le tableau */
+.tableContainer {
+    width: 800px;
+    text-align: center;
+    margin: 30px 0;
+    /* background-color: #24445c; */
+}
+
+.tableContainer p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #4d4d4d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style des cellules et bordures */
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Style des en-têtes */
+th {
+    background-color: #24445c;
+    font-weight: bold;
+    color: white;
+}
+
+/* Alternance des couleurs des lignes */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}

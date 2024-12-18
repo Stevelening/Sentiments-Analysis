@@ -133,7 +133,7 @@ function loadDOM() {
                 const messageElement = document.createElement("div");
                 messageElement.classList.add("message");
 
-                console.log(message)
+                //console.log(message)
 
                 if (message.evaluated) {
                     messageElement.innerHTML = `${message.sender}: ${message.message} <span class="evaluated">(Toxicity: ${message.toxicity})</span>`;
