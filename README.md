@@ -33,3 +33,6 @@ Projet d'analyse de sentiments pour la détection de messages haineux dans une c
 - Se deplacer dans Modele avec la commande `cd Modele` .
 - Installer les dependances `pip install -r requirements.txt` .
 - Lancer le serveur avec la commande `python3 server.py` .
+
+## Rapport
+Pour accéder au rapport, il suffit de double-cliquer sur le fihier `rapport.html` qui se trouve dans le dossier `Rapports`.
