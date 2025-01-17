@@ -74,7 +74,7 @@ function loadDOM() {
             // Check if the message is evaluated
             if (data.evaluated) {
                 // If evaluated, show the toxicity level
-                messageElement.innerHTML = `${data.sender}: ${data.message} <span class="evaluated">(Toxicity: ${data.toxicity})</span>`;
+                messageElement.innerHTML = `${data.sender}: ${data.message} <span class=${(message.toxicity < 0.5)? "lower" : "greater"}>(Toxicity: ${data.toxicity})</span>`;
             } else {
                 // If not evaluated, show the status as "Not Evaluated"
                 messageElement.innerHTML = `${data.sender}: ${data.message} <span class="not-evaluated">(Not Evaluated)</span>`;
@@ -133,10 +133,10 @@ function loadDOM() {
                 const messageElement = document.createElement("div");
                 messageElement.classList.add("message");
 
-                //console.log(message)
+                console.log(message)
 
                 if (message.evaluated) {
-                    messageElement.innerHTML = `${message.sender}: ${message.message} <span class="evaluated">(Toxicity: ${message.toxicity})</span>`;
+                    messageElement.innerHTML = `${message.sender}: ${message.message} <span class=${(message.toxicity < 0.5)? "lower" : "greater"}>(Toxicity: ${message.toxicity})</span>`;
                 } else {
                     messageElement.innerHTML = `${message.sender}: ${message.message} <span class="not-evaluated">(Not Evaluated)</span>`;
                 }

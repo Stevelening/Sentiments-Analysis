@@ -70,8 +70,18 @@ button:hover {
 }
 
 .not-evaluated {
-    color: red;
+    color: gray;
     font-style: italic;
+}
+
+.lower {
+    color: green;
+    font-weight: bold;
+}
+
+.greater {
+    color: red;
+    font-weight: bold;
 }
 
 #recipient-input {

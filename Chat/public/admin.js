@@ -28,7 +28,7 @@ async function fillTable(tableBody) {
             // Clear the table before updating
             tableBody.innerHTML = '';
 
-            // Display all suspect messages
+            // Display all suspect messages (toxicity >= 0.5)
             messages.forEach((message) => {
                 if(message.toxicity >= 0.5){
                     const tr = document.createElement("tr");
