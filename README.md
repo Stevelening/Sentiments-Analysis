@@ -36,7 +36,7 @@ Projet de développement d´un modèle d´intelligence artificielle permettant d
 - Vous pouvez maintenant utiliser le Chat sous reserve de lancer le serveur python.
 
 3. Lancer le serveur python qui permet d´evaluer les messages :
-- Télécharger le dossier `harassment_model_save` via le lien [harassment_model_save](https://drive.google.com/drive/folders/13rzgQqhpOP6GMd-pG7DhsIygs12YgohV?usp=drive_link) et le mettre dans le dossier `Modele`. Attention : lorsque vous téléchargez le dossier, vous obtenez une archive qui une fois décompréssée ne donne pas le dossier directement, mais un dossier qui contient le dossier. C´est le dossier le plus profond de la hierarchie (celui qui contient directement les fichiers) qu´il faut mettre dans le dossier `Modele`.
+- Télécharger le dossier `harassment_model_save` via le lien [harassment_model_save](https://drive.google.com/drive/folders/13rzgQqhpOP6GMd-pG7DhsIygs12YgohV?usp=drive_link) et le mettre dans le dossier `Modele`. Attention : lorsque vous téléchargez le dossier, vous obtenez une archive qui une fois décompréssée ne donne pas le dossier directement, mais un dossier qui contient le bon dossier. C´est le dossier le plus profond de la hierarchie (celui qui contient directement les fichiers) qu´il faut mettre dans le dossier `Modele`.
 - Dans une autre fenêtre du terminal, se deplacer dans `Modele` avec la commande `cd Modele` .
 - Installer les dependances avec la commande `pip install -r requirements.txt` .
 - Lancer le serveur avec la commande `python3 server.py` .
