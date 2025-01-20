@@ -81,7 +81,7 @@ def getHarassment(message):
 
 if __name__ == '__main__':
     # Initialisation du modele
-    model_dir = "./harassment_model_save"
+    model_dir = "./model_save"
     model = AutoModelForSequenceClassification.from_pretrained(model_dir)
     tokenizer = AutoTokenizer.from_pretrained(model_dir)
 
