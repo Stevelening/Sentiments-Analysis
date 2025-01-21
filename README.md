@@ -10,7 +10,10 @@ Projet de développement d´un modèle d´intelligence artificielle permettant d
 
 
 ## Rendu du projet
+- Le code du prétraitement des données : c´est le fichier `Modele/dataset_creation`
+- Le jeu de données final obtenu : c´est le fichier `Modele/balanced_binary_classification_dataset.csv`
 - Le code d'entrainement : c´est le fichier `Modele/Model_classification_training.ipynb`
+- Le code de test : c´est le fichier `Modele/Model_test.ipynb`
 - Un exécutable de la démo : c´est tout ce dossier. Vous trouverez dans la suite de ce fichier ou dans le rapport partie VII.3. comment lancer l´application.
 - Les poids du ou des réseau utilisés : ???
 - Un pdf qui résume vos trois précédents rapports : c´est le fichier `Rapports/Rapport_final.pdf` qui est en fait notre rapport final.
